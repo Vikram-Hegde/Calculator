@@ -1,0 +1,21 @@
+[data-theme='light'] {
+	--primary: hsl(217 89% 69%);
+	--text: hsl(210 29% 24%);
+	--shade-100: hsl(0 0% 95%);
+	--shade-200: hsl(0 0% 93%);
+	--shade-300: hsl(0 0% 92%);
+	--shade-400: hsl(0 0% 87%);
+	--shade-500: hsl(0 0% 89%);
+	--shade-600: hsl(0 0% 85%);
+}
+
+[data-theme='dark'] {
+	--primary: hsl(217 60% 61%);
+	--text: hsl(210 29% 90%);
+	--shade-100: hsl(0 0% 11%);
+	--shade-200: hsl(0 0% 12%);
+	--shade-300: hsl(0 0% 13%);
+	--shade-400: hsl(0 0% 20%);
+	--shade-500: hsl(0 0% 16%);
+	--shade-600: hsl(0 0% 21%);
+}

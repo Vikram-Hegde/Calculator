@@ -1,0 +1,45 @@
+.btn {
+	border: none;
+	font: inherit;
+	color: inherit;
+	cursor: pointer;
+	line-height: 0;
+
+	&--shade-200 {
+		background-color: var(--shade-200);
+	}
+
+	&--shade-300 {
+		background-color: var(--shade-300);
+	}
+
+	&--shade-400 {
+		background-color: var(--shade-400);
+	}
+
+	&--shade-500 {
+		background-color: var(--shade-500);
+	}
+
+	&--shade-600 {
+		background-color: var(--shade-600);
+	}
+
+	&--primary {
+		--background: var(--primary);
+		background-color: var(--background);
+		color: var(--shade-100);
+	}
+
+	&--lg {
+		grid-column: span 2;
+	}
+
+	&:hover {
+		filter: brightness(90%);
+	}
+
+	&:active {
+		filter: brightness(85%);
+	}
+}
