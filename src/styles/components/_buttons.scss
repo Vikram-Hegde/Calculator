@@ -35,6 +35,19 @@
 		grid-column: span 2;
 	}
 
+	&--theme-toggle {
+		color: var(--text);
+		background-color: transparent;
+
+		&:not(.active) {
+			opacity: 0.5;
+		}
+	}
+
+	&--theme-toggle + &--theme-toggle {
+		margin-left: 0.5rem;
+	}
+
 	&:hover {
 		filter: brightness(90%);
 	}

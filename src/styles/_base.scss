@@ -4,6 +4,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	transition: all 0.15s ease-in-out;
+	transition-property: color, background-color;
 }
 
 body {
@@ -12,6 +14,11 @@ body {
 	min-height: 100dvh;
 	@include grid-center;
 	color: var(--text);
+	background-color: var(--shade-300);
+}
+
+svg {
+	pointer-events: none;
 }
 
 output {
@@ -27,6 +34,7 @@ output {
 }
 
 .wrapper {
+	position: relative;
 	display: grid;
 	width: min(100vw, 375px / 1.25);
 	height: min(100vh, 752px / 1.25);
@@ -35,4 +43,15 @@ output {
 	border-radius: 16px;
 	overflow: hidden;
 	aspect-ratio: 1 / 2;
+}
+
+.theme-toggle {
+	position: absolute;
+	top: 1.25rem;
+	transform: translateX(-50%);
+	left: 50%;
+	background-color: var(--shade-500);
+	border-radius: 4px;
+	padding: 0.25rem;
+	line-height: 0;
 }
