@@ -26,7 +26,7 @@ const onClick = (e) => {
 		if (e.target.textContent === 'C') {
 			output.textContent = '';
 		} else if (e.target.textContent === '=') {
-			output.textContent = eval(output.textContent);
+			output.textContent = new Function('return ' + output.textContent)();
 		} else if (e.target.textContent === '←') {
 			output.textContent = output.textContent.slice(0, -1);
 		} else {
