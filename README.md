@@ -1,10 +1,10 @@
 # Calculator
 
-![Calculator App: Designed in Figma](demo.png)
+![Calculator App: Designed in Figma](demo.png 'Calculator Design')
 
 ## Run Locally
 
-Clone the project
+Clone the project. Make sure you have [**git**](https://git-scm.com) and [**node**](https://nodejs.org) installed.
 
 ```bash
 git clone https://github.com/Vikram-Hegde/Calculator

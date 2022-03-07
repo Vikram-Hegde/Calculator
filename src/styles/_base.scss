@@ -36,6 +36,7 @@ output {
 	font-size: 1.5rem;
 	height: 250px;
 	overflow: auto;
+	border-bottom: 2px solid var(--primary);
 }
 
 .wrapper {
