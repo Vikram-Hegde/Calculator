@@ -6,24 +6,11 @@
 	line-height: 0;
 	outline-offset: -2px;
 
-	&--shade-200 {
-		background-color: var(--shade-200);
-	}
-
-	&--shade-300 {
-		background-color: var(--shade-300);
-	}
-
-	&--shade-400 {
-		background-color: var(--shade-400);
-	}
-
-	&--shade-500 {
-		background-color: var(--shade-500);
-	}
-
-	&--shade-600 {
-		background-color: var(--shade-600);
+	@for $i from 2 to 7 {
+		$i: $i * 100;
+		&--shade-#{$i} {
+			background-color: var(--shade-#{$i});
+		}
 	}
 
 	&--primary {

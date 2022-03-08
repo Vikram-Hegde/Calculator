@@ -1,4 +1,5 @@
 [data-theme='light'] {
+	color-scheme: light;
 	--primary: hsl(217 89% 69%);
 	--text: hsl(210 29% 24%);
 	--shade-100: hsl(0 0% 95%);
@@ -10,6 +11,7 @@
 }
 
 [data-theme='dark'] {
+	color-scheme: dark;
 	--primary: hsl(217 60% 61%);
 	--text: hsl(210 29% 90%);
 	--shade-100: hsl(0 0% 11%);
