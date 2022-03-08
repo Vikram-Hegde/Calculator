@@ -37,3 +37,20 @@ const onClick = (e) => {
 };
 
 document.addEventListener('click', onClick);
+
+document.addEventListener('keyup', (e) => {
+	const pattern = /[0-9]|\.|\+|\-|\*|\/|\(|\)/g;
+	if (e.key.match(pattern)) {
+		if (e.shiftKey && e.key === '=') e.preventDefault();
+		output.textContent += e.key;
+	}
+	if (e.key.toLowerCase() === 'c') {
+		output.textContent = '';
+	}
+	if (e.key === 'Backspace') {
+		output.textContent = output.textContent.slice(0, -1);
+	}
+	if (e.key === 'Enter') {
+		output.textContent = new Function('return ' + output.textContent)();
+	}
+});
