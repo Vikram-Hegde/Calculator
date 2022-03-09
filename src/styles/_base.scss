@@ -56,7 +56,7 @@ output {
 		height: 100vh;
 	}
 
-	@media (max-height: 600px) {
+	@media (max-height: 600px) and (max-width: 500px) {
 		width: 100vw;
 		border-radius: 0;
 	}
